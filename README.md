@@ -81,3 +81,11 @@ ls -l tame_*.dp : voir tes fichiers et leur taille.
 cat solution.txt : relire les clés trouvées.
 ./pada --pub 0x8a1b2c3d4e : calcule une clé publique de test.
 ./pada --selftest : vérifie que le calcul est correct sur ton téléphone.
+
+kaggle
+
+!git clone https://github.com/lawahakassou-tech/pada.git
+%cd pada
+!g++ -O3 -march=native -std=c++17 -pthread pada.cpp -o pada && ./pada --selftest
+
+
